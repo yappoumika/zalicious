@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Dela Gothic One", "Georgia", serif;
+  --font-tag: "Dela Gothic One", "Georgia", serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", "Lucida Console", monospace;
+  --font-sans: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", "Lucida Console", monospace;
+
+  --color-cream: #ffffff;
+  --color-cream-dark: #ededed;
+  --color-ink: #000000;
+  --color-ink-soft: #1a1a1a;
+  --color-lime: #000000;
+  --color-lime-dark: #000000;
+  --color-lime-light: #555555;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.font-tag {
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.input {
+  border-radius: 0.5rem;
+  border: 1px solid color-mix(in srgb, var(--color-ink) 15%, transparent);
+  background: white;
+  padding: 0.65rem 1rem;
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--color-lime);
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 22s linear infinite;
+}
