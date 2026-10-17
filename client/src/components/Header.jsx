@@ -18,7 +18,7 @@ export default function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-cream">
+    <header className="sticky top-0 z-50 bg-cream pt-[env(safe-area-inset-top)]">
 
       <div className="relative">
         <div className="absolute right-6 top-3 z-20">

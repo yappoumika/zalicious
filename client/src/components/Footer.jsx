@@ -5,8 +5,8 @@ export default function Footer() {
   const { t } = useLanguage()
 
   return (
-    <footer className="bg-ink px-6 py-14 text-cream">
-      <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-4">
+    <footer className="bg-ink px-6 pt-14 pb-[calc(3.5rem+env(safe-area-inset-bottom))] text-cream">
+      <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-3">
         <div>
           <p className="font-display text-lg text-white">{t.footer.brandName}</p>
           <p className="mt-3 max-w-xs text-sm text-cream/60">{t.footer.tagline}</p>
@@ -26,13 +26,6 @@ export default function Footer() {
           links={[
             { label: t.footer.about, to: '/about' },
             { label: t.footer.contact, to: '/contact' },
-          ]}
-        />
-        <FooterColumn
-          title={t.footer.adminTitle}
-          links={[
-            { label: t.footer.adminLogin, to: '/admin/login' },
-            { label: t.footer.dashboard, to: '/admin' },
           ]}
         />
       </div>

@@ -16,6 +16,12 @@
   --color-lime-light: #555555;
 }
 
+/* Keep everything white on iOS: the overscroll area and the notch/status-bar
+   safe area both show the html background, not the body's. */
+html {
+  background-color: var(--color-cream);
+}
+
 body {
   background-color: var(--color-cream);
   color: var(--color-ink);
