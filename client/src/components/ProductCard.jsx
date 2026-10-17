@@ -7,7 +7,7 @@ export default function ProductCard({ product }) {
   return (
     <Link
       to={`/product/${product.slug}`}
-      className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white/60 transition-shadow hover:shadow-lg"
+      className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white/60 transition-all duration-300 hover:-rotate-1 hover:bg-ink hover:text-cream hover:shadow-xl"
     >
       <div className="relative flex aspect-square items-center justify-center overflow-hidden bg-ink">
         {product.image_url ? (
@@ -32,12 +32,12 @@ export default function ProductCard({ product }) {
       </div>
 
       <div className="flex flex-1 flex-col gap-1 p-4">
-        <p className="font-mono text-[11px] uppercase tracking-wide text-ink/50">{product.tier} · {product.category}</p>
+        <p className="font-mono text-[11px] uppercase tracking-wide text-ink/50 group-hover:text-cream/60">{product.tier} · {product.category}</p>
         <h3 className="font-display text-base leading-snug">{product.name}</h3>
-        <p className="line-clamp-2 text-sm text-ink/60">{product.description}</p>
+        <p className="line-clamp-2 text-sm text-ink/60 group-hover:text-cream/70">{product.description}</p>
         <div className="mt-auto flex items-center justify-between pt-3">
-          <span className="font-mono text-sm text-ink/50">{product.thc} · {product.weight}</span>
-          <span className="font-display text-lg text-lime-dark">${product.price}</span>
+          <span className="font-mono text-sm text-ink/50 group-hover:text-cream/60">{product.thc} · {product.weight}</span>
+          <span className="rotate-3 rounded-md bg-ink px-2.5 py-1 font-display text-base text-cream transition-colors group-hover:bg-cream group-hover:text-ink">${product.price}</span>
         </div>
       </div>
     </Link>

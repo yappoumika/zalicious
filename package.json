@@ -1,7 +1,7 @@
 {
-  "name": "papertrail",
+  "name": "zalicious",
   "version": "1.0.0",
-  "description": "Papertrail storefront with a simple CRUD admin backend.",
+  "description": "Zalicious storefront with a simple CRUD admin backend.",
   "private": true,
   "scripts": {
     "install:all": "npm install && npm install --prefix server && npm install --prefix client",

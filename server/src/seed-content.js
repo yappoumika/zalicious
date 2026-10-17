@@ -18,22 +18,22 @@ const rows = [
     en: '$25 OFF EACH BAG 5+ | 10% Off Genetics Box with Code',
     es: '$25 de descuento en cada bolsa 5+ | 10% de descuento en Caja de Genética con el código',
   },
-  { key: 'header.promoCode', label: 'Header — Promo code', en: 'PAPERTRAIL2026', es: 'PAPERTRAIL2026' },
+  { key: 'header.promoCode', label: 'Header — Promo code', en: 'ZALICIOUS2026', es: 'ZALICIOUS2026' },
   { key: 'header.toggleMenu', label: 'Header — Mobile menu button label', en: 'Toggle menu', es: 'Abrir menú' },
   {
     key: 'marquee',
     label: 'Scrolling marquee text',
-    en: 'MAKE TRAP AFFORDABLE AGAIN · FIRE DEALS ON TOP-TIER FLOWER · CALIFORNIA-GROWN PREMIUM THC ·',
-    es: 'HAZ EL TRAP ASEQUIBLE OTRA VEZ · OFERTAS INCREÍBLES EN FLOR TOP · THC PREMIUM CULTIVADO EN CALIFORNIA ·',
+    en: 'PURE QUALITY ✦ PURE FLAVOR ✦ ZALICIOUS ✦ PURE QUALITY ✦ PURE FLAVOR ✦ ZALICIOUS ✦',
+    es: 'PURA CALIDAD ✦ PURO SABOR ✦ ZALICIOUS ✦ PURA CALIDAD ✦ PURO SABOR ✦ ZALICIOUS ✦',
   },
 
   // Footer
-  { key: 'footer.brandName', label: 'Footer — Brand name', en: 'PAPERTRAIL', es: 'PAPERTRAIL' },
+  { key: 'footer.brandName', label: 'Footer — Brand name', en: 'ZALICIOUS', es: 'ZALICIOUS' },
   {
     key: 'footer.tagline',
     label: 'Footer — Tagline',
-    en: 'California-grown premium THC flower. Fire quality at unbeatable prices.',
-    es: 'Flor de THC premium cultivada en California. Calidad de primera a precios inmejorables.',
+    en: 'Pure quality. Pure flavor. California-grown premium THC.',
+    es: 'Pura calidad. Puro sabor. THC premium cultivado en California.',
   },
   { key: 'footer.shopTitle', label: 'Footer — "Shop" column title', en: 'Shop', es: 'Tienda' },
   { key: 'footer.companyTitle', label: 'Footer — "Company" column title', en: 'Company', es: 'Empresa' },
@@ -41,27 +41,33 @@ const rows = [
   {
     key: 'footer.copyrightSuffix',
     label: 'Footer — Copyright line (after year)',
-    en: 'Papertrail. Demo storefront for educational purposes.',
-    es: 'Papertrail. Tienda de demostración con fines educativos.',
+    en: 'Zalicious. Demo storefront for educational purposes.',
+    es: 'Zalicious. Tienda de demostración con fines educativos.',
   },
 
   // Home — Hero
-  { key: 'home.heroShopCta', label: 'Home — Hero button text', en: 'SHOP PAPERTRAIL', es: 'COMPRA PAPERTRAIL' },
+  {
+    key: 'home.stickerText',
+    label: 'Home — Spinning sticker text',
+    en: 'PURE QUALITY ✦ PURE FLAVOR ✦ ZALICIOUS ✦ ',
+    es: 'PURA CALIDAD ✦ PURO SABOR ✦ ZALICIOUS ✦ ',
+  },
+  { key: 'home.heroShopCta', label: 'Home — Hero button text', en: 'SHOP ZALICIOUS', es: 'COMPRA ZALICIOUS' },
 
   // Home — Tiers
-  { key: 'home.tiersEyebrow', label: 'Home — Tiers eyebrow label', en: 'PAPERTRAIL', es: 'PAPERTRAIL' },
-  { key: 'home.tiersTitle1', label: 'Home — Tiers heading line 1', en: 'Anything you need.', es: 'Todo lo que necesitas.' },
+  { key: 'home.tiersEyebrow', label: 'Home — Tiers eyebrow label', en: 'ZALICIOUS', es: 'ZALICIOUS' },
+  { key: 'home.tiersTitle1', label: 'Home — Tiers heading line 1', en: 'Pure Quality.', es: 'Pura Calidad.' },
   {
     key: 'home.tiersTitle2',
     label: 'Home — Tiers heading line 2',
-    en: 'To anywhere you need it.',
-    es: 'A donde lo necesites.',
+    en: 'Pure Flavor.',
+    es: 'Puro Sabor.',
   },
   {
     key: 'home.tiersSub',
     label: 'Home — Tiers paragraph',
-    en: 'From highs to lows, from here to across the globe. Anything you need, and anywhere you need it. Papertrail.',
-    es: 'De lo alto a lo bajo, de aquí a través del mundo. Todo lo que necesitas, y donde lo necesites. Papertrail.',
+    en: 'Clean, California-grown flower with nothing to hide. Quality you can see, flavor you can taste. Zalicious.',
+    es: 'Flor limpia cultivada en California, sin nada que esconder. Calidad que se ve, sabor que se siente. Zalicious.',
   },
 
   // Home — Shop Now banner
@@ -71,16 +77,16 @@ const rows = [
   {
     key: 'home.diamondsEyebrow',
     label: 'Home — Diamonds eyebrow label',
-    en: 'Anything * Anywhere * Best Tickets',
-    es: 'Cualquier Cosa * Cualquier Lugar * Los Mejores Boletos',
+    en: 'Pure Quality * Pure Flavor * Zalicious',
+    es: 'Pura Calidad * Puro Sabor * Zalicious',
   },
-  { key: 'home.diamondsTitle1', label: 'Home — Diamonds heading line 1', en: 'Best Service', es: 'El Mejor Servicio' },
-  { key: 'home.diamondsTitle2', label: 'Home — Diamonds heading line 2', en: 'From Papertrail', es: 'De Papertrail' },
+  { key: 'home.diamondsTitle1', label: 'Home — Diamonds heading line 1', en: 'Taste The Difference', es: 'Siente La Diferencia' },
+  { key: 'home.diamondsTitle2', label: 'Home — Diamonds heading line 2', en: 'From Zalicious', es: 'De Zalicious' },
   {
     key: 'home.diamondsBody',
     label: 'Home — Diamonds paragraph',
-    en: 'Giving you the best service, for the best price. We have no limits on what we can provide.',
-    es: 'Dándote el mejor servicio, al mejor precio. No tenemos límites en lo que podemos ofrecer.',
+    en: 'Every strain is hand-picked for clean smoke and loud terps. If it doesn’t taste right, it doesn’t make the shelf.',
+    es: 'Cada cepa es seleccionada a mano por su humo limpio y terpenos intensos. Si no sabe bien, no llega al estante.',
   },
 
   // Home — Fresh Drops
@@ -100,6 +106,7 @@ const rows = [
   { key: 'shop.loading', label: 'Shop — Loading message', en: 'Loading products…', es: 'Cargando productos…' },
   { key: 'shop.error', label: 'Shop — Error message', en: 'Could not load products.', es: 'No se pudieron cargar los productos.' },
   { key: 'shop.empty', label: 'Shop — Empty category message', en: 'No products in this category yet.', es: 'Aún no hay productos en esta categoría.' },
+  { key: 'shop.comingSoon', label: 'Shop — Empty section message', en: 'Dropping soon. Check back.', es: 'Muy pronto. Vuelve después.' },
 
   // Collections page
   { key: 'collections.eyebrow', label: 'Collections — Eyebrow label', en: 'Shop By Category', es: 'Compra Por Categoría' },
@@ -117,12 +124,12 @@ const rows = [
 
   // About page
   { key: 'about.eyebrow', label: 'About — Eyebrow label', en: 'About', es: 'Nosotros' },
-  { key: 'about.title', label: 'About — Page title', en: 'Papertrail', es: 'Papertrail' },
+  { key: 'about.title', label: 'About — Page title', en: 'Zalicious', es: 'Zalicious' },
   {
     key: 'about.intro',
     label: 'About — Intro paragraph',
-    en: "California-grown premium THC flower, sold at a price that actually makes sense. We started Papertrail because fire quality and fair pricing shouldn't be a tradeoff — you should get both, every time.",
-    es: 'Flor de THC premium cultivada en California, vendida a un precio que realmente tiene sentido. Fundamos Papertrail porque la calidad de primera y los precios justos no deberían ser una cosa u otra — deberías tener ambos, siempre.',
+    en: "California-grown premium THC flower, sold at a price that actually makes sense. We started Zalicious because fire quality and fair pricing shouldn't be a tradeoff — you should get both, every time.",
+    es: 'Flor de THC premium cultivada en California, vendida a un precio que realmente tiene sentido. Fundamos Zalicious porque la calidad de primera y los precios justos no deberían ser una cosa u otra — deberías tener ambos, siempre.',
   },
   { key: 'about.value1Title', label: 'About — Value card 1 title', en: 'Quality First', es: 'Calidad Primero' },
   {
@@ -157,7 +164,7 @@ const rows = [
     es: '¿Preguntas sobre un pedido, mayoreo, o cualquier otra cosa? Escríbenos y te responderemos.',
   },
   { key: 'contact.emailLabel', label: 'Contact — "Email" card label', en: 'Email', es: 'Correo' },
-  { key: 'contact.email', label: 'Contact — Email address', en: 'hello@papertrail.com', es: 'hello@papertrail.com' },
+  { key: 'contact.email', label: 'Contact — Email address', en: 'hello@zalicious.com', es: 'hello@zalicious.com' },
   { key: 'contact.wholesaleLabel', label: 'Contact — "Wholesale" card label', en: 'Wholesale', es: 'Mayoreo' },
   {
     key: 'contact.wholesaleValue',
@@ -199,14 +206,14 @@ const rows = [
   {
     key: 'howToOrder.note',
     label: 'How To Order — Callout note',
-    en: 'All orders are handled through direct contact with Papertrail — not through this website.',
-    es: 'Todos los pedidos se manejan por contacto directo con Papertrail — no a través de este sitio web.',
+    en: 'All orders are handled through direct contact with Zalicious — not through this website.',
+    es: 'Todos los pedidos se manejan por contacto directo con Zalicious — no a través de este sitio web.',
   },
   { key: 'howToOrder.cta', label: 'How To Order — Button text', en: 'CONTACT US', es: 'CONTÁCTANOS' },
 
   // Product card
   { key: 'product.soldOut', label: 'Product card — "Sold Out" badge', en: 'Sold Out', es: 'Agotado' },
-  { key: 'product.placeholderBrand', label: 'Product card — Placeholder brand text (no image)', en: 'PAPERTRAIL', es: 'PAPERTRAIL' },
+  { key: 'product.placeholderBrand', label: 'Product card — Placeholder brand text (no image)', en: 'ZALICIOUS', es: 'ZALICIOUS' },
 
   // Product detail page
   { key: 'productDetail.backToShop', label: 'Product Detail — "Back to Shop" link', en: 'Back to Shop', es: 'Volver a la Tienda' },

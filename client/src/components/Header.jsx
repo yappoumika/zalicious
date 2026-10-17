@@ -41,7 +41,7 @@ export default function Header() {
           </button>
 
           <Link to="/" className="mx-auto mt-4 block overflow-hidden rounded-lg md:mx-0">
-            <img src={t.assets.logo} alt="Papertrail" className="h-12 w-auto" />
+            <img src={t.assets.logo} alt="Zalicious" className="h-12 w-auto" />
           </Link>
 
           <nav className="hidden items-center gap-9 mt-8 font-display text-xs md:flex">

@@ -8,7 +8,8 @@
     "start": "node src/index.js",
     "seed": "node src/seed.js",
     "seed:content": "node src/seed-content.js",
-    "seed:credentials": "node src/seed-credentials.js"
+    "seed:credentials": "node src/seed-credentials.js",
+    "seed:sections": "node src/seed-shop-sections.js"
   },
   "keywords": [],
   "author": "",

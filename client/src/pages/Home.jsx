@@ -19,8 +19,7 @@ export default function Home() {
 
   return (
     <div className=''>
-      <HeroSection />
-      <TiersSection />
+      <WordmarkHero />
       <ShopNowBanner />
       <DiamondsSection />
 
@@ -43,12 +42,56 @@ export default function Home() {
   )
 }
 
+function WordmarkHero() {
+  const { t } = useLanguage()
+
+  return (
+    <section className="relative mx-5 mt-2 overflow-hidden px-2 pb-10 pt-6 text-center">
+      <h1 className="font-display text-[17vw] leading-[0.85] sm:text-[15vw] lg:text-[12rem]">
+        <span className="block">ZALI</span>
+        <span className="text-outline block">CIOUS</span>
+      </h1>
+      <p className="mx-auto mt-8 max-w-md text-ink/60">
+        {t.home.tiersTitle1} {t.home.tiersTitle2}
+      </p>
+      <Link
+        to="/shop"
+        className="mt-6 inline-block rounded-full bg-ink px-8 py-3 font-display text-sm text-cream transition-transform hover:-rotate-2 hover:scale-105"
+      >
+        {t.home.heroShopCta}
+      </Link>
+      <SpinningSticker text={t.home.stickerText} />
+    </section>
+  )
+}
+
+function SpinningSticker({ text }) {
+  return (
+    <Link
+      to="/shop"
+      aria-label={text}
+      className="absolute right-2 top-2 hidden h-28 w-28 sm:block md:right-8 md:h-36 md:w-36"
+    >
+      <svg viewBox="0 0 100 100" className="animate-spin-slow h-full w-full">
+        <defs>
+          <path id="sticker-circle" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0" />
+        </defs>
+        <circle cx="50" cy="50" r="49" fill="var(--color-ink)" />
+        <text fill="var(--color-cream)" fontSize="8" className="font-display">
+          <textPath href="#sticker-circle" textLength="236" lengthAdjust="spacingAndGlyphs">{text}</textPath>
+        </text>
+      </svg>
+      <span className="absolute inset-0 flex items-center justify-center font-display text-2xl text-cream">✦</span>
+    </Link>
+  )
+}
+
 function HeroSection() {
   const { t } = useLanguage()
 
   return (
     <section className="relative m-5 overflow-hidden rounded-[40px] bg-lime">
-      <img src={t.assets.heroBanner} alt="Papertrail" className="block h-auto w-full" />
+      <img src={t.assets.heroBanner} alt="Zalicious" className="block h-auto w-full" />
       <div className="absolute inset-0 flex items-center justify-center">
         <Link
           to="/shop"
@@ -77,7 +120,7 @@ function TiersSection() {
           <p className="mx-auto mt-4 max-w-sm text-ink/60">{t.home.tiersSub}</p>
         </div>
         <div className="mx-auto flex aspect-[3/4] w-56 items-center justify-center overflow-hidden rounded-2xl bg-ink shadow-xl">
-          <img src={t.assets.tiersBadge} alt="Papertrail" className="h-full w-full object-cover" />
+          <img src={t.assets.tiersBadge} alt="Zalicious" className="h-full w-full object-cover" />
         </div>
       </div>
     </section>

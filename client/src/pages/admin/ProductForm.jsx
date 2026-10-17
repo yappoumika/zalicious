@@ -4,7 +4,7 @@ import api from '../../lib/api'
 const EMPTY = {
   name: '',
   tier: 'Hybrid',
-  category: 'Flower',
+  category: '3.5 - Zips',
   price: '',
   thc: '',
   weight: '3.5g',
@@ -21,10 +21,18 @@ export default function ProductForm({ product, onSaved, onCancel }) {
   const [uploading, setUploading] = useState(false)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState('')
+  const [collectionNames, setCollectionNames] = useState([])
 
   useEffect(() => {
     setForm(product ? { ...EMPTY, ...product } : EMPTY)
   }, [product])
+
+  useEffect(() => {
+    api
+      .get('/collections')
+      .then((res) => setCollectionNames(res.data.map((c) => c.name)))
+      .catch(() => setCollectionNames([]))
+  }, [])
 
   function update(field, value) {
     setForm((f) => ({ ...f, [field]: value }))
@@ -93,7 +101,17 @@ export default function ProductForm({ product, onSaved, onCancel }) {
       </Field>
 
       <Field label="Category">
-        <input value={form.category} onChange={(e) => update('category', e.target.value)} className="input" />
+        <input
+          value={form.category}
+          onChange={(e) => update('category', e.target.value)}
+          className="input"
+          list="collection-names"
+        />
+        <datalist id="collection-names">
+          {collectionNames.map((name) => (
+            <option key={name} value={name} />
+          ))}
+        </datalist>
       </Field>
 
       <Field label="Price ($)">

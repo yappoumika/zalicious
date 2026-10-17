@@ -28,7 +28,7 @@ export default function AdminLogin() {
 
   return (
     <div className="mx-auto flex max-w-sm flex-col justify-center px-6 py-24">
-      <p className="text-center font-display text-lg text-lime-dark">PAPERTRAIL</p>
+      <p className="text-center font-display text-lg text-lime-dark">ZALICIOUS</p>
       <h1 className="mt-2 text-center font-display text-2xl">Admin Login</h1>
 
       <form onSubmit={handleSubmit} className="mt-8 flex flex-col gap-4">
